@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .services .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            gap: 2rem;
+        }
+
+        .services .box-container .box {
+            background: #fff;
+            border-radius: .5rem;
+            box-shadow: 10px 10px rgb(156, 149, 149);
+            border: 5px solid green;
+            padding: 2rem;
+            margin: 20px;
+        }
+
+        .heading {
+            text-align: center;
+            padding-bottom: 2rem;
+            text-shadow: 5px 5px rgb(75, 73, 73);
+            text-transform: uppercase;
+            color: black;
+            font-size: 5rem;
+            letter-spacing: .4rem;
+        }
+
+        .heading span {
+            text-transform: uppercase;
+
+            color: green;
+        }
+
+        .services .box-container .box i {
+            color: green;
+            font-size: 5rem;
+            padding: bottom 0.5rem;
+
+
+        }
+
+        .services .box-container .box h3 {
+            color: black;
+            font-size: 2.5rem;
+            padding: 1rem 0;
+        }
+
+        .services .box-container .box p {
+            color: grey;
+            font-size: 1.4rem;
+        }
+
+        .box .btn {
+            border-radius: .5rem;
+            box-shadow: 5px 5px rgb(156, 149, 149);
+            border: 5px solid green;
+
+
+        }
+
+        .box .btn span {
+            padding: 5px;
+            border-radius: 2px;
+            background-color: green;
+            border: 1px solid green;
+            color: white;
+
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        .navbar a {
+            color: gray;
+        }
+
+
+
+        .navbar-brand {
+            width: 10%;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="https://www.zol.be/sites/default/files/deelsites/future-health/futurehealth_logo_web_horizontaal.png"
+                class="navbar-brand" alt="100">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-item">
+                            <a class="nav-link navbar-brand1" aria-current="page" href=" ">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-brand1" href=" ">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown navbar-brand1">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Appointment
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item navbar-brand1" href=" ">Book Appointment</a></li>
+                            <li><a class="dropdown-item navbar-brand1" href="#">Check Appointment Status</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item navbar-brand1" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-brand1 " href=" ">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="services" id="services">
+        <h1 class="heading"> our <span>services</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-notes-medical"></i>
+                <h3>free checkups</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn">learn more <span class="fas fa-chevron-right"></span></a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-ambulance"></i>
+                <h3>ambulance</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn">learn more <span class="fas fa-chevron-right"></span></a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-user-md"></i>
+                <h3>expert doctors</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn">learn more <span class="fas fa-chevron-right"></span></a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-pills"></i>
+                <h3>medicines</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn">learn more <span class="fas fa-chevron-right"></span></a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-procedures"></i>
+                <h3>bed facility</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn">learn more <span class="fas fa-chevron-right"></span></a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-heartbeat"></i>
+                <h3>total care</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn">learn more <span class="fas fa-chevron-right"></span></a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+<script src="./boostrap/js/bootstrap.js.map"></script>
+<script src="./boostrap/js/bootstrap.min.js.map"></script>
+<script src="./boostrap/js/jquery-3.6.3.min.js"></script>
+
+</html>

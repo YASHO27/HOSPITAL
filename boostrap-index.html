@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+	<link rel="stylesheet" href="./boostrap/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="./boostrap/css/bootstrap.css">
+
+	<script src="https://kit.fontawesome.com/dda27e96c2.js" crossorigin="anonymous"></script>
+	<style>
+
+
+
+body{
+      font-family: Arial, Helvetica, sans-serif;
+	  background-color: whitesmoke;
+    }
+
+	.navbar{
+	
+	position: sticky;
+	top: 0;
+	z-index: 999;
+  background-color: white;
+  
+
+}
+
+		.navbar a {
+			color: black;
+			font-weight: 300;
+		}
+		
+
+
+
+		.navbar-brand {
+			width: 10%;
+		}
+
+		a{cursor: pointer;}
+
+
+
+		.card-group .card img{
+			cursor: pointer;
+		}
+
+		button:hover{background-color: white;
+		color: black;}
+
+		footer a{text-decoration: none;}
+
+
+
+
+
+	
+	</style>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg " >
+		<div class="container-fluid">
+			<img src="https://www.zol.be/sites/default/files/deelsites/future-health/futurehealth_logo_web_horizontaal.png" class="navbar-brand" alt="logo">
+			<!-- <a class="navbar-brand" href="#">Navbar</a> -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class=" mx-auto me-3 mb-2 mb-lg-0  nav justify-content-end" >
+					
+					<!-- <li class="nav-item">
+						<a class="nav-link navbar-brand1" href=" ">Gallery</a>
+					</li> -->
+
+					
+
+				
+					
+
+					<li class="nav-item">
+						<a class="nav-link " aria-current="page" href="find_mydoc.html"><img src="https://www.narayanahealth.org/sites/default/files/doctor.png" width="20px" alt="">Find a Doctor</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="medical-service.html"> <img src="https://www.narayanahealth.org/sites/default/files/medical-services.png" width="20px" alt=""> Medical Services</a>
+					  </li>
+
+					  <li class="nav-item dropdown navbar-brand1">
+						<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false"><img src="https://www.narayanahealth.org/sites/default/files/book-an-appoinment.png" width="20px" alt="">
+							Appointment
+						</a>
+						<ul class="dropdown-menu ">
+							<li><a class="dropdown-item navbar-brand1" href="BookAppointment.html">Book Appointment</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item navbar-brand1" href="appoint.html">Check Appointment Status</a></li>
+							
+							
+						</ul>
+					</li>
+					
+					  <li class="nav-item">
+						<a class="nav-link" href="contact.html"> <img src="https://www.narayanahealth.org/sites/default/files/contact%20us.png" width="20px" alt=""> Contact us</a>
+					  </li>
+
+					  <li class="nav-item " >
+						<a class="nav-link navbar-brand1 " href="about.html">About Us</a>
+					</li>
+
+					  
+				</ul>
+				
+			</div>
+		</div>
+		
+	</nav>
+	
+
+
+	<!-- ./image/back3.jpg    ./image/back2.jpg   ./image/back4.jpg   og img -->
+
+
+	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<a href="BookAppointment.html"><img src="c1.jpeg" class="d-block w-100" alt="..."></a>
+			<div class="carousel-caption d-none d-md-block">
+			  <!-- <h5>First slide label</h5>
+			  <p>Some representative placeholder content for the first slide.</p> -->
+			</div>
+		  </div>
+		  <div class="carousel-item">
+			<a href="cancer.html"><img src="c2.jpeg" class="d-block w-100" alt="..."></a>
+			<div class="carousel-caption d-none d-md-block">
+			  <!-- <h5>Second slide label</h5>
+			  <p>Some representative placeholder content for the second slide.</p> -->
+			</div>
+		  </div>
+		  <div class="carousel-item">
+			<a href="BookAppointment.html"><img src="c3.jpeg" class="d-block w-100" alt="..."></a>
+			<div class="carousel-caption d-none d-md-block">
+			  <!-- <h5>Third slide label</h5>
+			  <p>Some representative placeholder content for the third slide.</p> -->
+			</div>
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	  </div>
+
+
+
+
+
+	  <div class="card-group mt-md-5" style="margin: 0px 60px ;"  >
+		<div class="card me-3" >
+		    <a href="bonemarrow.html"><img src="https://www.narayanahealth.org/sites/default/files/styles/small_banner__360_x_244_/public/BMT-Small-Bannerr.jpg?itok=kUylsEoD" class="card-img-top" alt="..."></a>
+		  
+		</div>
+		<div class="card me-3">
+			<a href="liver.html">  <img src="https://www.narayanahealth.org/sites/default/files/styles/small_banner__360_x_244_/public/LTP.jpg?itok=cqVXEVoi" class="card-img-top" alt="..."></a>
+		  
+		</div>
+		<div class="card me-3">
+			<a href="kidney.html"> <img src="https://www.narayanahealth.org/sites/default/files/styles/small_banner__360_x_244_/public/KTP.jpg?itok=l_0f3M-2" class="card-img-top" alt="..."></a>
+		  
+		</div>
+	  </div>
+
+
+
+
+
+
+		<hr class="mt-5" style="color: lightseagreen;">
+		
+		
+
+
+		<!-- NH CARE -->
+
+		<div class="container text-center mt-3 mb-3">   
+			<h2 class="card-title" style="color: rgb(66, 80, 109);">FH </h2>
+			<p style="color: rgb(42, 54, 78);">Your go-to source for expert guidance on health and wellness</p>
+			<div class="row ">
+				<div class="col ">
+					<div class="card mb-3" style="max-width: 540px;">
+						<div class="row g-0">
+							<div class="col-md-4">
+								
+								<img src="https://www.narayanahealth.org/sites/all/themes/nh_default_theme/images/pillar/abdominal.jpg" class="img-fluid " alt="..." style="height: 5cm; width: auto;">
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">Abdominal Pain problems:</h5>
+									<p class="card-text d-sm-block d-none"> Diagnosis and Treatment </p>
+
+									<a href="abdominal.html"><button id="click" class="btn btn-info text-dark mt-4" >READ MORE</button></a>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card mb-3" style="max-width: 540px;">
+						<div class="row g-0">
+							<div class="col-md-4">
+								<img src="https://www.narayanahealth.org/sites/all/themes/nh_default_theme/images/resize-image/urinary-system-min.jpg" class="img-fluid " alt="..." style="height: 5cm; width: auto;">
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">Prostate Cancer</h5>
+									<p class="card-text  d-sm-block d-none ">You guide to Prostate Health</p>
+
+									<a href="cancer.html"><button class="btn btn-info text-dark mt-5 " >READ MORE</button></a>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<div class="row  ">
+				<div class="col">
+					<div class="card mb-3" style="max-width: 540px;">
+						<div class="row g-0">
+							<div class="col-md-4">
+								<img src="https://hospital.narayanahealth.org/pulmonary-embolism/inc/img/img-28_mobile.jpg" class="img-fluid " alt="..." style="height: 5cm; width: auto;">
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">Pulmonary Embolism</h5>
+									<p class="card-text d-none d-sm-block ">Excellence in Care delivery </p>
+									<a href="pulmonary.html"><button class="btn btn-info text-dark mt-5" >READ MORE</button></a>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<div class="col">
+					<div class="card mb-3" style="max-width: 540px;">
+						<div class="row g-0">
+
+							<div class="col-md-4">
+								<img src="https://www.narayanahealth.org/sites/all/themes/nh_default_theme/images/resize-image/gastrectomy-bariatric-surgery-min.jpg" class="img-fluid " alt="..." style="height: 5cm; width: auto;">
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">Bariatric Surgery</h5>
+									<p class="card-text d-sm-block d-none">Is it worth the risks?</p>
+									<a href="BARIATRIC.html"><button class="btn btn-info text-dark mt-5" >READ MORE</button></a>
+
+
+									
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<hr class="mt-5" style="color: lightseagreen;">
+
+
+
+
+
+
+	<div class="container mb-5 ">
+
+		<div class="row">
+			<h2 class="card-title text-center mb-3 mt-3" >
+				Clinical Excellence
+			</h2>
+			<div class="col-4">
+
+				<img src="excellence.jpg" class="img-fluid border" alt="Hospitals">
+				<h4 class="text-center">2.5 M+ </h4>
+				<p class="text-uppercase text-center fw-bold"> Patient treatment</p>
+
+			</div>
+			<div class="col-4 col-xs-4">
+				<img src="excellence2.jpg" class='img-fluid border ' alt="Hospitals in total india">
+				<h4 class="text-center">22 </h4>
+				<p class="text-uppercase fw-bold  text-center fs-md-1"> State of the are Hospitals </p>
+
+
+			</div>
+			<div class="col-4">
+				<img src="excellence3.jpg" class="img-fluid border" alt="location & pattener">
+				<h4 class="text-center">16,000+ </h4>
+				<p class="text-center text-uppercase fw-bold">Associates</p>
+			</div>
+
+		</div>
+
+	</div>
+
+	<hr class="mt-5" style="color: lightseagreen;">
+
+
+
+	<section id="about" class="about-section-padding ">
+		<div class="container  ">
+		  <div class="col-lg-8 col-md-12 col-12 pe-lg-5 mt-md-5 ">
+			<div class="about-text">
+			  <h2>News&Events</h2>
+			  <p>Read More About NSTI Health's Events, Programs, and Coverage in the News</p>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-lg-6 col-md-12 col-12">
+			  <div class="about-img">
+				<img src="https://www.narayanahealth.org/sites/default/files/styles/news___events__750_x_400_/public/news-media/ddC-Banner_0.jpg?itok=z39V9qnv" alt="" class="img-fluid">
+			  </div>
+			</div>
+			<div class="col-lg-6 col-md-12 col-12 ps-lg-auto mt-md-5">
+			  <div class="about-text">
+				<h5>‘Bentall Surgery’ performed successfully at NSTI Multispeciality Hospital, Jaipur.</h5>
+				<p><a href="bentel.html" >LEARN MORE</a></p>
+	  
+				<h5>66-year-old patient gets new lease of life through TAVI at NSTI Multispecialty Hospital</h5>
+				<p><a href="66year.html" >LEARN MORE</a></p>
+	  
+			  </div>
+			</div>
+	  
+			<div class="col-lg-12 col-md-12 col-12 ps-lg-auto mt-md-5">
+			  <div class="about-text">
+				
+	  
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+
+
+
+
+	  
+
+
+
+
+
+<hr class="mt-5" style="color: lightseagreen;">
+
+<section id="about" class="about-section-padding   mt-5">
+	<div class="container  ">
+	  
+	  <div class="row" >
+		<div class="col-lg-6 col-md-12 col-12" >
+		  <div class="about-img">
+			<img src="https://mobisoftinfotech.com/resources/wp-content/uploads/2014/07/Corporate-Social-Responsibility.png" alt="" class="img-fluid rounded-start">
+		  </div>
+		</div>
+		<div class="col-lg-6 col-md-12 col-12 ps-lg-auto mt-md-5 p-4" style="border-bottom: 1px solid lightseagreen; ">
+		  <div class="about-text" >
+			<h5>CSR at NSTI Hospital</h5>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam deserunt aperiam itaque adipisci, ea ut rerum consequatur officia esse nesciunt magni error asperiores architecto aliquam nulla cumque, cupiditate impedit ullam?</p>
+			<a href="csr.html"><button  class="btn btn-info text-dark mt-5 " >LEARN MORE</button></a>
+		  </div >
+		</div>
+  
+		<div class="col-lg-6 col-md-12 col-12 ps-lg-auto mt-md-5 p-4">
+		  <div class="about-text">
+			<h5>Baby's Miracale journey hope at NSTI Hospital</h5>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate esse vel quam temporibus eligendi ipsa, aperiam illo ut tempora, adipisci tempore nemo vitae. Debitis assumenda consequatur veniam tenetur dolorem cupiditate.</p>	
+			
+			<a href="baby.html"><button class="btn btn-info text-dark mt-5" >LEARN MORE</button></a>
+		  </div>
+		</div>
+		<div class="col-lg-6 col-md-12 col-12">
+			<div class="about-img">
+			  <img src="https://data1.ibtimes.co.in/en/full/679841/infant-death.jpg?h=450&l=50&t=40" alt="" class="card-img-top">
+			</div>
+		  </div>
+	  </div>
+	</div>
+  </section>
+
+
+
+
+  
+
+<hr class="mt-5" style="color: lightseagreen;">
+
+<section class="follow">
+	<div class="container mb-5 "  style="font-size: x-large;">
+	
+		<div class="row">
+			<h2 class="card-title text-center mb-3 mt-3" >
+				Follow Us On
+			</h2>
+			
+
+
+			 <div class="feed1" style="text-align: center; ">
+	
+				<a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" style="margin: 10px;"><i class="fab fa-facebook-f fa-2x" style="color: #3b5998;"  ></i></a>
+			
+				<a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" style="margin: 10px;"><i class="fab fa-twitter fa-2x" style="color: #55acee;"></i></a>
+			
+				<a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" style="margin: 10px;"><i class="fab fa-instagram fa-2x" style="color: #ac2bac;"></i></a>
+				
+				<a href="https://in.linkedin.com/" target="_blank" rel="noopener noreferrer" style="margin: 10px;"><i class="fab fa-linkedin-in fa-2x" style="color: #0082ca;"></i></a>
+
+				<a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" style="margin: 10px;"><i class="fab fa-youtube fa-2x" style="color: #ed302f;"></i></a>
+			</div>  
+		</div>
+	
+	</div>
+	</section>
+
+
+
+
+
+
+	<footer >
+
+		<div class="container-fluid  mt-5 bg-info " style="text-decoration: none;">
+		  
+			  <div class="row pt-4">
+		  
+				  <div class="col-xl-3 col-md-3 col-sm-3 footer  " >
+					  <div class=" fs-6 fw-bold  mb-2" >Quick Link
+		  
+					  </div>
+		  
+					 <a href="find_mydoc.html"> <p>Find A Doctor</p></a>
+					 <a href="BookAppointment.html"> <p> Book an Appointment </p></a>
+					  <a href="find_mydoc.html"><p>Make aEnquiry</p></a>
+					 
+	  
+				  </div>
+	  
+	  
+	  
+				  <div class="col-xl-3 col-md-3 col-sm-3 footer ">
+					  <div class="fs-6 fw-bold  mb-2">FH CARE </div>
+	  
+					 <a href="Head .html"> <p>Hernia</p></a>
+					 <a href="kidney.html"> <p>Lung Cancer</p></a>
+					 <a href="Head .html"><p>Brain Tumour</p></a> 
+					 <a href="liver.html"> <p>Live Canser</p></a>
+					 <a href="Head .html"> <p>Heart Attack</p> </a>
+					  
+	  
+	  
+				  </div>
+				  <div class="col-xl-3 col-md-3 col-sm-3 footer ">
+					  <div class="fs-6 fw-bold mb-2 ">Excellence Center</div>
+					 <a href="cancer.html"> <p>Cadiology</p></a>
+					 <a href="infect.html"> <p>Cardiac Surgery</p></a>
+					 <a href="internal.html"> <p>Neurology</p></a>
+					 
+					  <a href="cardic.html"><p>Uninary Problem</p></a> 
+					<a href="kidney.html"><p>Kidney Transplant</p></a> 
+				  </div>
+				  <div class="col-xl-3 col-md-3 col-sm-3  footer">
+					  <div class="fs-6 fw-bold  mb-2 "> Medical Professionals</div>
+	  
+					<a href="about.html"> <p>Acadmics</p></a> 
+					<a href="Clinical.html"> <p>Clinic Research</p></a> 
+					  
+					  <div class="row">
+						  <div class="col-8 m-0 p-0 " class="form-control ">
+							  <input type="text" name='mail' id='mail-sort' class="form-control m-0 " style="min-width: 80%;"
+								  placeholder="Enter Your Name">
+						  </div>
+						  <div class="col-4 m-0 p-0 " class="form-control">
+							  <input type="submit" class="form-control m-0 " value="📤">
+						  </div>
+
+						 
+					  </div>
+
+					 
+				  </div>
+	  
+	  
+	  
+	  
+			  </div>
+	  
+	  
+		  </div>
+		  <div class=" bg-danger   p-4">
+	  
+			  <a href="" class="p-2 text-decoration-none"> © Future Hopital Ltd |All Rights Reserve </a>
+			  <span class="float-end">
+				  <a href="" class="p-2  text-decoration-none"> Term & Conditions</a>
+				  <a href="" class="p-2  text-decoration-none"> Privacy Policy</a>
+			  </span>
+		  </div>
+	  
+	  
+		
+	  </footer>
+
+
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+	crossorigin="anonymous"></script>
+
+<script src="./boostrap/js/bootstrap.js.map"></script>
+<script src="./boostrap/js/bootstrap.min.js.map"></script>
+<script src="./boostrap/js/jquery-3.6.3.min.js"></script>
+
+</html>

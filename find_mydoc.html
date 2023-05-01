@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+	<link rel="stylesheet" href="./boostrap/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="./boostrap/css/bootstrap.css">
+
+
+	<style>
+		body{
+      font-family: Arial, Helvetica, sans-serif;
+	  
+    }
+
+	.navbar{
+	
+	position: sticky;
+	top: 0;
+	z-index: 999;
+  background-color: ghostwhite;
+  
+
+}
+
+		.navbar a {
+			color: black;
+			font-weight: 300;
+		}
+		
+
+
+
+		.navbar-brand {
+			width: 10%;
+		}
+
+
+		.row {
+			justify-content: space-between;
+		}
+
+		.row img {
+			width: 100%;
+			/* border:1px solid red */
+		}
+
+
+		.row .clear {
+			position: absolute;
+			right: 3%;
+			top: 2%;
+		}
+		label{
+			display: block;
+		}
+
+		select{
+			border: 1px solid #ececec;
+			width: 100%;
+			margin-top: 1%;
+			background: #f8f8f8;
+			color: #98a2a9;
+    height: 45px;
+    padding: 12px 30px 12px 18px;
+		}
+
+		div h3{
+			color: rgb(45, 137, 230);
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<nav class="navbar navbar-expand-lg " >
+		<div class="container-fluid">
+			<img src="https://www.zol.be/sites/default/files/deelsites/future-health/futurehealth_logo_web_horizontaal.png" class="navbar-brand" alt="logo">
+			<!-- <a class="navbar-brand" href="#">Navbar</a> -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class=" mx-auto me-3 mb-2 mb-lg-0  nav justify-content-end" >
+					
+					<!-- <li class="nav-item">
+						<a class="nav-link navbar-brand1" href=" ">Gallery</a>
+					</li> -->
+
+					
+
+				
+					
+
+					<li class="nav-item">
+						<a class="nav-link " aria-current="page" href="find_mydoc.html"><img src="https://www.narayanahealth.org/sites/default/files/doctor.png" width="20px" alt="">Find a Doctor</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="medical-service.html"> <img src="https://www.narayanahealth.org/sites/default/files/medical-services.png" width="20px" alt=""> Medical Services</a>
+					  </li>
+
+					  <li class="nav-item dropdown navbar-brand1">
+						<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false"><img src="https://www.narayanahealth.org/sites/default/files/book-an-appoinment.png" width="20px" alt="">
+							Appointment
+						</a>
+						<ul class="dropdown-menu ">
+							<li><a class="dropdown-item navbar-brand1" href="BookAppointment.html">Book Appointment</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item navbar-brand1" href="appoint.html">Check Appointment Status</a></li>
+							
+							
+						</ul>
+					</li>
+					
+					  <li class="nav-item">
+						<a class="nav-link" href="contact.html"> <img src="https://www.narayanahealth.org/sites/default/files/contact%20us.png" width="20px" alt=""> Contact us</a>
+					  </li>
+
+					  <li class="nav-item " >
+						<a class="nav-link navbar-brand1 " href="about.html">About Us</a>
+					</li>
+
+					  
+				</ul>
+				
+			</div>
+		</div>
+		
+	</nav>
+	
+
+
+	<div class="container-fluid">
+		<div class="col-xl-12 text-center" >
+			<h1>Find A Doctor</h1>
+			<h5>Find the right health specialist from our list of doctors. You can also search by their name to
+				narrow down the list.
+			</h5>
+		</div>
+	</div>
+
+	<div class="container  mt-3">
+		<div class="row">
+			<div class=" col-xl-6 col-lg-6 col-md-6">
+				<form class="d-flex" role="search">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+			</div>
+
+			<div class="col-xl-6 col-lg-5 col-md-6  " >
+				<span style="color: rgb(57, 161, 196);">+91 745 856 6953 </span>for Book Appointment
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container  mt-5 ">
+ 
+		<div class="row">
+			<div class="col-xl-5 col-lg-5 col-md-4 col-sm-12  position-relative "  style="border-right: 1px solid rgb(206, 230, 230);" >
+				<p>
+					<span for="filter" class="mt-1 ms-1">Filter</span>
+					<span class="clear">Clear All</span>
+				</p>
+				<label for="loc">Location</label>
+				<select name="locat" id="location">
+					<option value="Mumbai">Mumbai</option>
+					<option value="Jodhpur">Jodhpur</option>
+					<option value="Nagpur">Nagpur</option>
+					<option value="Noida">Noida</option>
+				</select>
+
+
+				<label for="">Hospital & Clinics</label>
+				<select name="hos&cli" id="hos&clinic">
+					<option type="checkbox" value="">
+						Future hospital Mumbai
+					</option>
+					<option type="checkbox" name="" id="Mumabihos">
+						hospital clinic Mumbai
+					</option>
+					<option type="checkbox" value="">
+						Future hospital Nagpur
+					</option>
+					<option type="checkbox" name="" id="Mumabihos">Future hospital clini Nagpur
+					</option>
+					<option type="checkbox" value="">
+						Future hospital Jodhapur
+					</option>
+					<option type="checkbox" name="" id="Mumabihos">Future hospital clinic Jodhapur
+					</option>
+				</select>
+
+
+				<label for="">Speciality</label>
+				<select name="speci" id="speciliti">
+					<option type="checkbox" value="">Heart
+					</option>
+					<option type="checkbox" name="" id="Mumabihos">lung
+					</option>
+				</select>
+
+				<p></p>
+				<label for="">Filter by procedure</label>
+                <select name="" id="filter-pro">Filter by procedure
+<option value="">Filter by procedure</option>
+<option value="">Filter by procedure</option>
+<option value="">Filter by procedure</option>
+<option value="">Filter by procedure</option>
+<option value="">Filter by procedure</option>
+<option value="">Filter by procedure</option>
+<option value="">Filter by procedure</option>
+
+				</select>
+
+
+
+
+
+
+
+			</div>
+
+			<div class="col-xl-7 col-lg-7  col-md-8 col-sm-12 ">
+				
+				
+					<div class="row  ">
+						<div class="col-xl-3 col-md-2  ">
+							<img class="rounded-circle img-responsive  mt-5 mb-5  " width="195" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5za_3l7K2TivGlO_frd-cPX4H7sVZ7Z-sQKbNY5Ew3_ZeZUxekBz9b1BRu71geXLp5_Y&usqp=CAU"
+								alt="">
+						</div>
+						<div class="col-xl-6 col-md-6 ">
+							<h3>Dr. Aabha Gupta</h3>
+							<p>Visiting Consultant - Obstetrics & Gynaecology</p>
+							<p>MS</p>
+
+							<div class="row">
+								<div class="col-xl-12 col-md-6">
+									<h5>SPECIALITY</h5>
+									<p>Obstetrics & Gynaecolog</p>
+								</div>
+								<div class="col-xl-12 col-md-6">
+									<h5>HOSPITAL</h5>
+									<p>Jaipur - Narayana Multispeciality Hospital, Jaipur</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-3 m-auto">
+							<p class="text-primary">080-67506834</p>
+							<a href="infect.html"><button class="btn btn-outline-info"> >> MAKE AN ENQUIRY</button></a>
+						</div>
+					</div>
+
+
+					<hr style="color: rgb(151, 180, 180);">
+
+					<div class="row  ">
+						<div class="col-xl-3 col-md-2  ">
+							<img class="rounded-circle img-responsive  mt-5 mb-5  " width="195" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROALCPTJ_Q5BOi_XbEr-9sQpHB-24NpdcLEgpNgj9tiF1opGkl1dE8cuaWdRrOb7v0aU4&usqp=CAU"
+								alt="">
+						</div>
+						<div class="col-xl-6 col-md-6 ">
+							<h3>Dr. Anisha Patil</h3>
+							<p>Visiting Consultant - Obstetrics & Gynaecology</p>
+							<p>MS (OBG)</p>
+
+							<div class="row">
+								<div class="col-xl-12 col-md-6">
+									<h5>SPECIALITY</h5>
+									<p>Obstetrics & Gynaecolog</p>
+								</div>
+								<div class="col-xl-12 col-md-6">
+									<h5>HOSPITAL</h5>
+									<p>Mysore - Narayana Multispeciality Clinic, Mysore, Mysore - Narayana Multispeciality Hospital, Mysore</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-3 m-auto">
+							<p class="text-primary">080-67506834</p>
+							<a href="internal.html"><button class="btn btn-outline-info"> >> MAKE AN ENQUIRY</button></a>
+
+						</div>
+					</div>
+
+					<hr style="color: rgb(151, 180, 180);">
+
+
+					<div class="row  ">
+						<div class="col-xl-3 col-md-2  ">
+							<img class="rounded-circle img-responsive  mt-5 mb-5  " width="195" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWQI7kIFzDhPu_5iL9cKYuOheowBa48Ex_GpxScQp20k4MNFEWqULpWaReb9pcK__SRqU&usqp=CAU"
+								alt="">
+						</div>
+						<div class="col-xl-6 col-md-6 ">
+							<h3>Dr.Rani Roy</h3>
+							<p>Visiting Consultant - Anaesthesia & Critical Care</p>
+							<p>MS</p>
+
+							<div class="row">
+								<div class="col-xl-12 col-md-6">
+									<h5>SPECIALITY</h5>
+									<p>Anaesthesia</p>
+								</div>
+								<div class="col-xl-12 col-md-6">
+									<h5>HOSPITAL</h5>
+									<p>Jaipur - Narayana Multispeciality Hospital, Jaipur</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-3 m-auto">
+							<p class="text-primary">080-67506834</p>
+							<a href="plastic.html"><button class="btn btn-outline-info"> >> MAKE AN ENQUIRY</button></a>
+
+						</div>
+					</div>
+
+
+					<hr style="color: rgb(151, 180, 180);">
+
+
+					<div class="row  ">
+						<div class="col-xl-3 col-md-2  ">
+							<img class="rounded-circle img-responsive  mt-5 mb-5  " width="195" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTL9zz66Mc20em9hMZSQiqCwV1xkmrhWVBnQPbLieMToNG03MNTsDsWU2UHZ6u6NdA-fM&usqp=CAU"
+								alt="">
+						</div>
+						<div class="col-xl-6 col-md-6 ">
+							<h3>Dr.Sahil Khan</h3>
+							<p>Visiting Consultant - Nephrology</p>
+							<p>MS</p>
+
+							<div class="row">
+								<div class="col-xl-12 col-md-6">
+									<h5>SPECIALITY</h5>
+									<p>Nephrology</p>
+								</div>
+								<div class="col-xl-12 col-md-6">
+									<h5>HOSPITAL</h5>
+									<p>Jaipur - Narayana Multispeciality Hospital, Jaipur</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-3 m-auto">
+							<p class="text-primary">080-67506834</p>
+							<a href="Pulmonology.html"><button class="btn btn-outline-info"> >> MAKE AN ENQUIRY</button></a>
+
+						</div>
+					</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<hr style="color: rgb(151, 180, 180); margin-bottom: 1cm;">
+
+	<footer >
+
+		<div class="container-fluid  mt-5 bg-info " style="text-decoration: none;">
+		  
+			  <div class="row pt-4">
+		  
+				  <div class="col-xl-3 col-md-3 col-sm-3 footer  " >
+					  <div class=" fs-6 fw-bold  mb-2" >Quick Link
+		  
+					  </div>
+		  
+					 <a href="find_mydoc.html"> <p>Find A Doctor</p></a>
+					 <a href="BookAppointment.html"> <p> Book an Appointment </p></a>
+					  <a href="find_mydoc.html"><p>Make aEnquiry</p></a>
+					 
+	  
+				  </div>
+	  
+	  
+	  
+				  <div class="col-xl-3 col-md-3 col-sm-3 footer ">
+					  <div class="fs-6 fw-bold  mb-2">FH CARE </div>
+	  
+					 <a href="Head .html"> <p>Hernia</p></a>
+					 <a href="kidney.html"> <p>Lung Cancer</p></a>
+					 <a href="Head .html"><p>Brain Tumour</p></a> 
+					 <a href="liver.html"> <p>Live Canser</p></a>
+					 <a href="Head .html"> <p>Heart Attack</p> </a>
+					  
+	  
+	  
+				  </div>
+				  <div class="col-xl-3 col-md-3 col-sm-3 footer ">
+					  <div class="fs-6 fw-bold mb-2 ">Excellence Center</div>
+					 <a href="cancer.html"> <p>Cadiology</p></a>
+					 <a href="infect.html"> <p>Cardiac Surgery</p></a>
+					 <a href="internal.html"> <p>Neurology</p></a>
+					 
+					  <a href="cardic.html"><p>Uninary Problem</p></a> 
+					<a href="kidney.html"><p>Kidney Transplant</p></a> 
+				  </div>
+				  <div class="col-xl-3 col-md-3 col-sm-3  footer">
+					  <div class="fs-6 fw-bold  mb-2 "> Medical Professionals</div>
+	  
+					<a href="about.html"> <p>Acadmics</p></a> 
+					<a href="Clinical.html"> <p>Clinic Research</p></a> 
+					  
+					  <div class="row">
+						  <div class="col-8 m-0 p-0 " class="form-control ">
+							  <input type="text" name='mail' id='mail-sort' class="form-control m-0 " style="min-width: 80%;"
+								  placeholder="Enter Your Name">
+						  </div>
+						  <div class="col-4 m-0 p-0 " class="form-control">
+							  <input type="submit" class="form-control m-0 " value="📤">
+						  </div>
+
+						 
+					  </div>
+
+					 
+				  </div>
+	  
+	  
+	  
+	  
+			  </div>
+	  
+	  
+		  </div>
+		  <div class=" bg-danger   p-4">
+	  
+			  <a href="" class="p-2 text-decoration-none"> © Future Hopital Ltd |All Rights Reserve </a>
+			  <span class="float-end">
+				  <a href="" class="p-2  text-decoration-none"> Term & Conditions</a>
+				  <a href="" class="p-2  text-decoration-none"> Privacy Policy</a>
+			  </span>
+		  </div>
+	  
+	  
+		
+	  </footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+	crossorigin="anonymous"></script>
+
+<script src="./boostrap/js/bootstrap.js.map"></script>
+<script src="./boostrap/js/bootstrap.min.js.map"></script>
+<script src="./boostrap/js/jquery-3.6.3.min.js"></script>
+
+</html>

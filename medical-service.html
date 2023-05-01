@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+	<link rel="stylesheet" href="./boostrap/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="./boostrap/css/bootstrap.css">
+	<style>
+		body{
+      font-family: Arial, Helvetica, sans-serif;
+	  background-color: white;
+    }
+
+	.navbar{
+	
+	position: sticky;
+	top: 0;
+	z-index: 999;
+  background-color: ghostwhite;
+  
+
+}
+
+		.navbar a {
+			color: black;
+			font-weight: 300;
+		}
+		
+
+
+
+		.navbar-brand {
+			width: 10%;
+		}
+
+		img{cursor: pointer;}
+
+ background-image{
+opacity: 10%;
+}
+.text-info{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 500;
+}
+	 	
+	</style>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg " >
+		<div class="container-fluid">
+			<img src="https://www.zol.be/sites/default/files/deelsites/future-health/futurehealth_logo_web_horizontaal.png" class="navbar-brand" alt="logo">
+			<!-- <a class="navbar-brand" href="#">Navbar</a> -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class=" mx-auto me-3 mb-2 mb-lg-0  nav justify-content-end" >
+					
+					<!-- <li class="nav-item">
+						<a class="nav-link navbar-brand1" href=" ">Gallery</a>
+					</li> -->
+
+					
+
+				
+					
+
+					<li class="nav-item">
+						<a class="nav-link " aria-current="page" href="find_mydoc.html"><img src="https://www.narayanahealth.org/sites/default/files/doctor.png" width="20px" alt="">Find a Doctor</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="medical-service.html"> <img src="https://www.narayanahealth.org/sites/default/files/medical-services.png" width="20px" alt=""> Medical Services</a>
+					  </li>
+
+					  <li class="nav-item dropdown navbar-brand1">
+						<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false"><img src="https://www.narayanahealth.org/sites/default/files/book-an-appoinment.png" width="20px" alt="">
+							Appointment
+						</a>
+						<ul class="dropdown-menu ">
+							<li><a class="dropdown-item navbar-brand1" href="BookAppointment.html">Book Appointment</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item navbar-brand1" href="appoint.html">Check Appointment Status</a></li>
+							
+							
+						</ul>
+					</li>
+					
+					  <li class="nav-item">
+						<a class="nav-link" href="contact.html"> <img src="https://www.narayanahealth.org/sites/default/files/contact%20us.png" width="20px" alt=""> Contact us</a>
+					  </li>
+
+					  <li class="nav-item " >
+						<a class="nav-link navbar-brand1 " href="about.html">About Us</a>
+					</li>
+
+					  
+				</ul>
+				
+			</div>
+		</div>
+		
+	</nav>
+	
+
+
+
+	<div class="card-header text-center pt-5" style="border: none; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm38mKz4m24n_IoGr-LfEc3QrRa_NQBZX_F9jyWbDmbW78XtT97JmXm8dvqRrOUimGvEk&usqp=CAU);" >
+		<h4 style="font-weight: 700;"> Search Medical Service</h4>
+		<p class="text-primary" style="font-weight: 400;"> Browse through our list of Medical Services or search by the speciality and procedure name to narrow down the list</p>
+	</div>
+
+<div style="background-color: gainsboro;">
+	<div class="container mt-2 " >
+		<div class="p-4 text-center"style="background-color: gainsboro;" >
+			<div class="row">
+				<div class="col-lg-6 col-md-12 col-sm-12">
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+				</div>
+				<div class="col-lg-6 col-md-12 col-sm-12 text-center m-auto">
+					+91 745 856 6953 for Book Appointment
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+	<div class="container mt-5  ">
+		<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+			<ol class="breadcrumb">
+			  <li class="breadcrumb-item"><a href="boostrap-index.html">Home</a></li>
+			  <li class="breadcrumb-item active" aria-current="page">Medical Services</li>
+			</ol>
+		  </nav>
+	</div>
+
+
+
+
+<!-- Our Services -->
+
+	<div class="container " >
+<!-- style="border:1px solid red" -->
+		<h3 class="text-center  m-2 mt-md-5">Specialities</h3>
+
+		<div class="row mt-4 text-info" >
+			<div class="col-lg-3 col-md-4 col-sm-6  col-None-6 " style="background-color: transparent;">
+				<a href="kidney.html"> Adult Kidney Transplant</a>
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6  col-None-6" style="background-color: transparent;">
+				<a href="Head .html">	Haemato Oncology</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6  col-None-6" style="background-color: transparent;">
+				<a href="infect.html">	Ortho-Oncology</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6  col-None-6" style="background-color: transparent;">
+				<a href="radio.html">	Anaesthesia</a>
+			</div>
+
+		</div>
+
+
+		<!-- second row  -->
+
+
+		<div class="row mt-4 text-info " >
+			<div class="col-lg-3 col-md-4 col-sm-6 " style="background-color: transparent;">
+				<a href="physical.html">	Anaesthesia</a>
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: transparent;">
+				<a href="Head .html">	Haematology</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: transparent;">
+				<a href="infect.html">  Orthopaedics</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: transparent;">
+				<a href="Critical.html">	Boold Bank</a>
+			</div>
+
+		</div>
+		<div class="row mt-4 text-info" >
+			<div class="col-lg-3 col-md-4 col-sm-6 " style="background-color: transparent;">
+				<a href="Head .html">	Head & Neck Surgery-Oncology</a>
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: transparent;">
+				<a href="physical.html">	Pain & Palliative care</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: transparent;">
+				<a href="abdominal.html">	Bone Marrow Transplant(Stem Cell Transplant)</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: transparent;">
+				<a href="liver.html">	Heart Transplant</a>
+			</div>
+
+		</div>
+
+		<div class="row mt-4 text-info" >
+			<div class="col-lg-3 col-md-4 col-sm-6 " style="background-color: transparent;">
+				<a href="physical.html">	Physical Mediacine & Rehabilitation</a>
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: transparent;">
+				<a href="breastcancer.html">		Breast Cancer</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: transparent;">
+				<a href="liver.html">		Hepatology & liver Transplantation</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: transparent;">
+				<a href="Psychiatry.html">		Physuotherapy</a>
+			</div>
+
+		</div>
+
+		<div class="row mt-4 text-info" >
+			<div class="col-lg-3 col-md-4 col-sm-6 " style="background-color: transparent;">
+				<a href="Psychiatry.html">	psychiatry  & Clinical Psychology</a>
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: transparent;">
+				<a href="Pulmonology.html">		Pulmonology</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: transparent;">
+				<a href="radio.html">		Interventional Radiology</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: transparent;">
+				<a href="liver.html">	  Liver Transplant & HPB Surgery</a>
+			</div>
+
+		</div>
+
+
+		<div class="row mt-4 text-info" >
+				<div class="col-lg-3 col-md-4 col-sm-6 " style="background-color: transparent;">
+					<a href="Critical.html">			Critical Care</a>
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: transparent;">
+				<a href="internal.html">				Internal Mediacine</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: transparent;">
+				
+				<a href="Integrative.html">				Integrative Oncology</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: transparent;">
+				<a href="Critical.html">				Critical Care</a>
+			</div>
+
+		</div>
+
+
+
+		<div class="row mt-4 text-info" >
+			<div class="col-lg-3 col-md-4 col-sm-6 " style="background-color: transparent;">
+				<a href="cardic.html">			Cardiac Surgery-Adult</a>
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: transparent;">
+				<a href="infect.html">				Infectious Diseases</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: transparent;">
+				<a href="plastic.html">				Plastic Sergury</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: transparent;">
+				<a href="Clinical.html">				Clinical Nutrition & Dietetics </a>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<footer >
+
+		<div class="container-fluid  mt-5 bg-info " style="text-decoration: none;">
+		  
+			  <div class="row pt-4">
+		  
+				  <div class="col-xl-3 col-md-3 col-sm-3 footer  " >
+					  <div class=" fs-6 fw-bold  mb-2" >Quick Link
+		  
+					  </div>
+		  
+					 <a href="find_mydoc.html"> <p>Find A Doctor</p></a>
+					 <a href="BookAppointment.html"> <p> Book an Appointment </p></a>
+					  <a href="find_mydoc.html"><p>Make aEnquiry</p></a>
+					 
+	  
+				  </div>
+	  
+	  
+	  
+				  <div class="col-xl-3 col-md-3 col-sm-3 footer ">
+					  <div class="fs-6 fw-bold  mb-2">FH CARE </div>
+	  
+					 <a href="Head .html"> <p>Hernia</p></a>
+					 <a href="kidney.html"> <p>Lung Cancer</p></a>
+					 <a href="Head .html"><p>Brain Tumour</p></a> 
+					 <a href="liver.html"> <p>Live Canser</p></a>
+					 <a href="Head .html"> <p>Heart Attack</p> </a>
+					  
+	  
+	  
+				  </div>
+				  <div class="col-xl-3 col-md-3 col-sm-3 footer ">
+					  <div class="fs-6 fw-bold mb-2 ">Excellence Center</div>
+					 <a href="cancer.html"> <p>Cadiology</p></a>
+					 <a href="infect.html"> <p>Cardiac Surgery</p></a>
+					 <a href="internal.html"> <p>Neurology</p></a>
+					 
+					  <a href="cardic.html"><p>Uninary Problem</p></a> 
+					<a href="kidney.html"><p>Kidney Transplant</p></a> 
+				  </div>
+				  <div class="col-xl-3 col-md-3 col-sm-3  footer">
+					  <div class="fs-6 fw-bold  mb-2 "> Medical Professionals</div>
+	  
+					<a href="about.html"> <p>Acadmics</p></a> 
+					<a href="Clinical.html"> <p>Clinic Research</p></a> 
+					  
+					  <div class="row">
+						  <div class="col-8 m-0 p-0 " class="form-control ">
+							  <input type="text" name='mail' id='mail-sort' class="form-control m-0 " style="min-width: 80%;"
+								  placeholder="Enter Your Name">
+						  </div>
+						  <div class="col-4 m-0 p-0 " class="form-control">
+							  <input type="submit" class="form-control m-0 " value="📤">
+						  </div>
+
+						 
+					  </div>
+
+					 
+				  </div>
+	  
+	  
+	  
+	  
+			  </div>
+	  
+	  
+		  </div>
+		  <div class=" bg-danger   p-4">
+	  
+			  <a href="" class="p-2 text-decoration-none"> © Future Hopital Ltd |All Rights Reserve </a>
+			  <span class="float-end">
+				  <a href="" class="p-2  text-decoration-none"> Term & Conditions</a>
+				  <a href="" class="p-2  text-decoration-none"> Privacy Policy</a>
+			  </span>
+		  </div>
+	  
+	  
+		
+	  </footer>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+	crossorigin="anonymous"></script>
+
+<script src="./boostrap/js/bootstrap.js.map"></script>
+<script src="./boostrap/js/bootstrap.min.js.map"></script>
+<script src="./boostrap/js/jquery-3.6.3.min.js"></script>
+
+</html>

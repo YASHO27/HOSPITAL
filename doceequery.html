@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+	<link rel="stylesheet" href="./boostrap/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="./boostrap/css/bootstrap.css">
+
+
+	<style>
+		.navbar img {
+			width: 10%
+		}
+
+		label {
+			display: block;
+		}
+
+		.coll-1 {
+			border-width: 0px 1px 0px 0px;
+			border-style: solid;
+			border-color: #ececec;
+			/* border: 1px solid  #ececec;*/
+		}
+
+		input{
+			border: 1px solid #ececec;
+			width: 100%;
+			margin-top: 1%;
+			background: #f8f8f8;
+		}
+		label span{
+			color:red;
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<img src="./image/logo.png" class="navbar-brand" alt="100">
+			<!-- <a class="navbar-brand" href="#">Navbar</a> -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+					<li class="nav-link">Home</li>
+					<li class="nav-link">Contact</li>
+					<li class="nav-link">Appointment</li>
+					<li class="nav-link">About</li>
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="container">
+		<div class="col-12 text-center">
+			<h1>Find A Doctor</h1>
+			<h5>Find the right health specialist from our list of doctors. You can also search by their name to
+				narrow down the list.
+			</h5>
+		</div>
+	</div>
+
+
+	<div class="container mt-3">
+		<div class="row">
+
+			<div class=" col-xl-3 col-lg-4 col-md-3 col-sm-12  coll-1">
+				<label for="">Enquiry Form</label>
+				<label for="">Feedback Form</label>
+				<label for="">Appointment Form</label>
+				<label for="">Health Check Package Form</label>
+
+			</div>
+			<div class="col-xl-8  col-lg-8 col-md-9 col-sm-12 ">
+				Furture Health >> Enquiry Form
+
+				<!-- <div class="row ">
+
+					<p class="d-inline">Enquiry Form</p>
+					<Button class="d-xl-inline-block d-lg-inline-block">Review & Blog's</Button>
+				</div> -->
+
+
+
+				<label for="name" class="mt-2">Name<span class='text-danger fw-bolder'>*</span></label>
+				<input type="text"  class="mt-1" name="name" id="uname" placeholder="Enter Yoour Full Name" required>
+
+				<div class="row mt-2">
+					<div class="col-6">
+				<label for="mail" >Email ID<span class='text-danger fw-bolder'>*</span></label>
+			
+			
+				<input type="email"  class="mt-1" name="mail" id="email" placeholder="Enter Your Email ID" required>
+			</div>
+				<div class="col-6">
+				<label for="mono">Mobile Number <span  class='text-danger fw-bolder'>*</span></label>
+				<input type="tel"  class="mt-1" name="num" id="mo_num" placeholder="Enter Contact Number" required>
+			</div>
+			</div>
+				<label for="docname" class="mt-3">Doctoor Name <span class='text-danger fw-bolder'>*</span></label>
+				<input type="text" class="mt-1" name="docname" id="doc-name" placeholder="Dr. Mohit Roy" required>
+ <label for="questio" class="mt-3">Your Query</label>
+ <textarea class="col-12 mt-1" row="6"  name="Query" id="ques" >
+
+
+
+
+
+
+			</div>
+
+
+
+
+		</div>
+	</div>
+
+	<footer >
+
+		<div class="container-fluid  mt-5 bg-info " style="text-decoration: none;">
+		  
+			  <div class="row pt-4">
+		  
+				  <div class="col-xl-3 col-md-3 col-sm-3 footer  " >
+					  <div class=" fs-6 fw-bold  mb-2" >Quick Link
+		  
+					  </div>
+		  
+					 <a href="find_mydoc.html"> <p>Find A Doctor</p></a>
+					 <a href="BookAppointment.html"> <p> Book an Appointment </p></a>
+					  <a href="find_mydoc.html"><p>Make aEnquiry</p></a>
+					 
+	  
+				  </div>
+	  
+	  
+	  
+				  <div class="col-xl-3 col-md-3 col-sm-3 footer ">
+					  <div class="fs-6 fw-bold  mb-2">FH CARE </div>
+	  
+					 <a href="Head .html"> <p>Hernia</p></a>
+					 <a href="kidney.html"> <p>Lung Cancer</p></a>
+					 <a href="Head .html"><p>Brain Tumour</p></a> 
+					 <a href="liver.html"> <p>Live Canser</p></a>
+					 <a href="Head .html"> <p>Heart Attack</p> </a>
+					  
+	  
+	  
+				  </div>
+				  <div class="col-xl-3 col-md-3 col-sm-3 footer ">
+					  <div class="fs-6 fw-bold mb-2 ">Excellence Center</div>
+					 <a href="cancer.html"> <p>Cadiology</p></a>
+					 <a href="infect.html"> <p>Cardiac Surgery</p></a>
+					 <a href="internal.html"> <p>Neurology</p></a>
+					 
+					  <a href="cardic.html"><p>Uninary Problem</p></a> 
+					<a href="kidney.html"><p>Kidney Transplant</p></a> 
+				  </div>
+				  <div class="col-xl-3 col-md-3 col-sm-3  footer">
+					  <div class="fs-6 fw-bold  mb-2 "> Medical Professionals</div>
+	  
+					<a href="about.html"> <p>Acadmics</p></a> 
+					<a href="Clinical.html"> <p>Clinic Research</p></a> 
+					  
+					  <div class="row">
+						  <div class="col-8 m-0 p-0 " class="form-control ">
+							  <input type="text" name='mail' id='mail-sort' class="form-control m-0 " style="min-width: 80%;"
+								  placeholder="Enter Your Name">
+						  </div>
+						  <div class="col-4 m-0 p-0 " class="form-control">
+							  <input type="submit" class="form-control m-0 " value="📤">
+						  </div>
+
+						 
+					  </div>
+
+					 
+				  </div>
+	  
+	  
+	  
+	  
+			  </div>
+	  
+	  
+		  </div>
+		  <div class=" bg-danger   p-4">
+	  
+			  <a href="" class="p-2 text-decoration-none"> © Future Hopital Ltd |All Rights Reserve </a>
+			  <span class="float-end">
+				  <a href="" class="p-2  text-decoration-none"> Term & Conditions</a>
+				  <a href="" class="p-2  text-decoration-none"> Privacy Policy</a>
+			  </span>
+		  </div>
+	  
+	  
+		
+	  </footer>
+
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+	crossorigin="anonymous"></script>
+
+<script src="./boostrap/js/bootstrap.js.map"></script>
+<script src="./boostrap/js/bootstrap.min.js.map"></script>
+<script src="./boostrap/js/jquery-3.6.3.min.js"></script>
+
+</html>
